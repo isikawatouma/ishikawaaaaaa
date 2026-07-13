@@ -1,88 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>チャレンジ</title>
-
-<style>
-body{
-    margin:0;
-    background:#e8e8e8;
-    font-family:"Yu Gothic",sans-serif;
-}
-
-.box{
-    width:1000px;
-    margin:30px auto;
-    position:relative;
-}
-
-.bg{
-    width:100%;
-    display:block;
-    border-radius:10px;
-}
-
-.message{
-    position:absolute;
-    top:40px;
-    left:30px;
-    background:rgba(255,255,255,0.8);
-    padding:15px 20px;
-}
-
-.message p{
-    margin:0;
-    color:#cc3366;
-    font-size:32px;
-    font-weight:bold;
-    line-height:1.5;
-}
-
-.butterfly{
-    position:absolute;
-    width:90px;
-}
-
-.b1{
-    left:240px;
-    top:470px;
-}
-
-.b2{
-    left:420px;
-    top:430px;
-}
-
-.flower{
-    position:absolute;
-    width:60px;
-    right:120px;
-    bottom:40px;
-}
-</style>
-
+    <meta charset="utf-8">
+    <title>画像</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="position: relative;">
 
-<div class="box">
+    <img id="backimg0" src="./bg0.png" alt="花畑">
 
-<img src="素材/bg0.png" class="bg">
+    <img id="f0" class="foo" src="./foo.gif" alt="誰"></img>
+    <img id="f1" class="foo" src="./foo.gif" alt="誰"></img>
+    <img id="f2" class="foo" src="./foo.gif" alt="誰"></img>
+    <img id="f3" class="foo" src="./foo.gif" alt="誰"></img>
+    <img id="f4" class="foo" src="./foo.gif" alt="誰"></img>
 
-<div class="message">
-<p>
-ぽかぽか陽気の穏やかな朝<br>
-花畑では、蝶々がのんびり飛んでいます
-</p>
-</div>
+    <img id="backimg0" src="./bg1.png" alt="花畑">
 
-<img src="素材/butterfly.gif" class="butterfly b1">
-<img src="素材/butterfly.gif" class="butterfly b2">
+    <img id="bt0" class="chou" src="./butterfly.gif" alt="蝶"></img>
+    <img id="bt1" class="chou" src="./butterfly.gif" alt="蝶"></img>
+    <img id="bt2" class="chou" src="./butterfly.gif" alt="蝶"></img>
 
-<img src="素材/foo.gif" class="flower">
+    <div id="message">
+        蝶々が飛んでいる。<br>
+        ひらひらひら～
+    </div>
 
-</div>
+    <script src="script.js"></script>
 
 </body>
 </html>
